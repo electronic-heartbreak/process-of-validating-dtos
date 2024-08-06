@@ -21,7 +21,7 @@ When a controller receives an HTTP POST request, the request data may have any s
 This repository contains a solution with multiple ASP.NET Core Web API projects demonstrating the different approaches of validating a DTO. The list down below gives a summary of all the projects with a description. Each project has a `Product` class and `CreateProductDto` class. The properties `InternalCode`, `CreatedAt`, and `IsDiscontinued` are not used, but these fullfil the purpose of using a DTO.
 
 1. Full validation
-The purpose of this project is to show that a DTO equipped with maximized validation properties is not beneficial. As stated in a previous chapter, DTO's should not have any behavior. Even though the data annations are simple attributes, they show how the data should behave. For example with `SupplierEmail` where it has to be a valid e-mail or with `Price` where the it should be within the given range. With this approach it could be more valid to remove the DTO class and use the `Product` class instead and adjust what can be posted and returned.
+- The purpose of this project is to show that a DTO equipped with maximized validation properties is not beneficial. As stated in a previous chapter, DTO's should not have any behavior. Even though the data annations are simple attributes, they show how the data should behave. For example with `SupplierEmail` where it has to be a valid e-mail or with `Price` where the it should be within the given range. With this approach it could be more valid to remove the DTO class and use the `Product` class instead and adjust what can be posted and returned.
 2. Lightweight validation
 3. Validation using Fluent API
 4. TODO
