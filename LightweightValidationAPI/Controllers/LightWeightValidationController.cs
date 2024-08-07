@@ -15,7 +15,7 @@ namespace LightWeightValidationAPI.Controllers
             _mapper = mapper;
         }
 
-        [HttpPost(Name = "LightWeightValidationValidation")]
+        [HttpPost(Name = "PostLightWeightValidation")]
         [Consumes("application/json")]
         public IActionResult Post([FromBody] CreateProductDto productDto)
         {

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullValidationAPI", "FullValidationAPI\FullValidationAPI.csproj", "{D48D87BD-C795-4E99-83DA-2E1CB0F2EF3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightweightValidationAPI", "LightweightValidationAPI\LightweightValidationAPI.csproj", "{CD9D6C0A-B9F3-41BB-8096-B229ADB7B884}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightweightValidationAPI", "LightweightValidationAPI\LightweightValidationAPI.csproj", "{CD9D6C0A-B9F3-41BB-8096-B229ADB7B884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidationAPI", "FluentValidationAPI\FluentValidationAPI.csproj", "{7C4B6E9B-B867-4AF4-8D8A-F6FD7910D812}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CD9D6C0A-B9F3-41BB-8096-B229ADB7B884}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD9D6C0A-B9F3-41BB-8096-B229ADB7B884}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD9D6C0A-B9F3-41BB-8096-B229ADB7B884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C4B6E9B-B867-4AF4-8D8A-F6FD7910D812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C4B6E9B-B867-4AF4-8D8A-F6FD7910D812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C4B6E9B-B867-4AF4-8D8A-F6FD7910D812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C4B6E9B-B867-4AF4-8D8A-F6FD7910D812}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
