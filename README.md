@@ -23,6 +23,7 @@ This repository contains a solution with multiple ASP.NET Core Web API projects 
 1. Full validation
 - The purpose of this project is to show that a DTO equipped with maximized validation properties is not beneficial. In the current situation the validation can create behavior and force the data to be in a certain shape. This is visible with for example `SupplierEmail` where it has to be a valid e-mail or with `Price` where the it should be within the given range. With this approach it could be more valid to remove the DTO class and use the `Product` class instead and adjust what can be posted and returned.
 2. Lightweight validation
+- This project gives an alternative to the full validation where only light validation rules are applied to the properties. This method recudes the chance of behavior in the DTO, and only shapes the data in such a way that certain data must be required or not. The problem remains that properties like `SupplierEmail` and `Price` should still be validated to prevent incorrect information to be processed. Since the controller's only purpose is to be a pass-through, the validation should not take place here. With a repository pattern a `create` function would exist to store the Product. Even this place is not suited for the job. This could mean that a new validation class could be created to handle the validation.
 3. Validation using Fluent API
 4. TODO
 

@@ -1,0 +1,6 @@
+@LightweightValidationAPI_HostAddress = http://localhost:5251
+
+GET {{LightweightValidationAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
