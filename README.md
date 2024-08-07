@@ -15,13 +15,13 @@ The difference between data transfer objects and business objects or data access
 
 ## The problem
 
-When a controller receives an HTTP POST request, the request data may have any shape. It needs to go from shapeless data to data with a schema (verified keys and types). Since DTO's should not contain business logic, it becomes more difficult to get to a valid and correct domain object that can, for example, be inserted into a database. The main focus of this repository lies in the process of validating the DTO data, so it can be converted to the correlating domain object. By enough feedback, a new project will be created containing the fresh obtained information, giving others the oppertunity to follow this trend.
+When a controller receives an HTTP POST request, the request data may have any shape. It needs to go from shapeless data to data with a schema (verified keys and types). Since DTO's should not contain business logic, it becomes more difficult to get to a valid and correct domain object that can, for example, be inserted into a database. The main focus of this repository lies in the process of validating the DTO data, so it can be converted to the correlating domain object. By enough feedback, a new project will be created containing the feedback, giving others the oppertunity to follow this trend.
 
 ## Repository content
 This repository contains a solution with multiple ASP.NET Core Web API projects demonstrating the different approaches of validating a DTO. The list down below gives a summary of all the projects with a description. Each project has a `Product` class and `CreateProductDto` class. The properties `InternalCode`, `CreatedAt`, and `IsDiscontinued` are not used, but these fullfil the purpose of using a DTO.
 
 1. Full validation
-- The purpose of this project is to show that a DTO equipped with maximized validation properties is not beneficial. As stated in a previous chapter, DTO's should not have any behavior. Even though the data annations are simple attributes, they show how the data should behave. For example with `SupplierEmail` where it has to be a valid e-mail or with `Price` where the it should be within the given range. With this approach it could be more valid to remove the DTO class and use the `Product` class instead and adjust what can be posted and returned.
+- The purpose of this project is to show that a DTO equipped with maximized validation properties is not beneficial. In the current situation the validation can create behavior and force the data to be in a certain shape. This is visible with for example `SupplierEmail` where it has to be a valid e-mail or with `Price` where the it should be within the given range. With this approach it could be more valid to remove the DTO class and use the `Product` class instead and adjust what can be posted and returned.
 2. Lightweight validation
 3. Validation using Fluent API
 4. TODO
